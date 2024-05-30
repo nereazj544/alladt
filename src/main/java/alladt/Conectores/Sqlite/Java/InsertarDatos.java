@@ -24,7 +24,7 @@ public class InsertarDatos {
             String dn = args[1];
             String l = args[2];
 
-            String sql = ("INSERT INTO departamentos VALUES ( " + d + ", '" + dn + "' , '" + l + "')"); 
+            String sql = ("INSERT INTO departamentos VALUES ( " + d + ", '" + dn + "' , '" + l + "')");
             // ! Si se hace de esta manera es importante añadir las '' a los textos.
 
             Statement s = conexion.createStatement();
@@ -51,17 +51,14 @@ public class InsertarDatos {
             System.out.println("> Apellido empleado: ");
             String apellido = sc.nextLine();
 
-            
-            
             // 3
             System.out.println("> Oficio empleado: ");
             String oficio = sc.nextLine();
-            
+
             // 4
             System.out.println("> Direccion (numero) empleado: ");
             int direcion = Integer.parseInt(sc.nextLine());
-            
-           
+
             // 5
             System.out.println("> Fecha de alta (AÑO-MES-DIA) empleado: ");
             String fecha = sc.nextLine();
@@ -73,9 +70,11 @@ public class InsertarDatos {
             // 7
             System.out.println("> Comision empleado: ");
             double comision = Double.parseDouble(sc.nextLine());
-          
+            // 8
+            System.out.println("> Nº departamento: ");
+            int dep = Integer.parseInt(sc.nextLine());
 
-            String sqlpreparada = ("INSERT INTO departamentos VALUES ( ?,?,?, ?,?,?, ?)");
+            String sqlpreparada = ("INSERT INTO empleados VALUES ( ?,?,?, ?,?,?, ?, ?)");
             PreparedStatement ps = conexion.prepareStatement(sqlpreparada);
             ps.setInt(1, emp_no);
             ps.setString(2, apellido);
@@ -84,19 +83,18 @@ public class InsertarDatos {
             ps.setString(5, fecha);
             ps.setDouble(6, salario);
             ps.setDouble(7, comision);
-            
-
-            
+            ps.setInt(8, dep);
 
             int filas = ps.executeUpdate(sqlpreparada);
             System.out.println("> Datos insetados. Nº de filas afectadas: " + filas);
 
             sc.close();
-        
+
         } catch (SQLException e) {
-            System.out.println("> El sistema no a encontrado la base de datos, la tabla o el campo.\n O campo repetido");
+            System.out
+                    .println("> El sistema no a encontrado la base de datos, la tabla o el campo.\n O campo repetido");
             System.out.println("> Expecificacion del error: ");
             e.printStackTrace();
         }
-}
+    }
 }
