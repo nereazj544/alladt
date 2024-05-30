@@ -1,12 +1,15 @@
 PROCEDIMEITNO
 
-delimiter $$
-create procedure pro1 create table ejemplo (
-    id INT NOT NULL PRIMARY KEY,
-    nombre VARCHAR(10)
-);
-COMMIT;
-END $$ delimiter;
+DELIMITER $$
+CREATE PROCEDURE pro1()
+BEGIN
+    CREATE TABLE ejemplo (
+        id INT NOT NULL PRIMARY KEY,
+        nombre VARCHAR(10)
+    );
+END $$
+DELIMITER ;
+
 
 DELIMITER $$ 
  CREATE PROCEDURE subida_sal(d INT, subida INT)
