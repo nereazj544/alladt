@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -27,7 +28,28 @@ public class InsetarDatos_txt {
             Connection conexion = DriverManager.getConnection(
                     "jdbc:sqlite:C:\\Users\\nzjha\\Desktop\\CLASE\\alladt\\src\\main\\java\\alladt\\Conectores\\Sqlite\\DATABASE\\sqlite.db");
             BufferedReader br = new BufferedReader(new FileReader(fl));
-            String sqlpreparada = ("INSERT INTO departamentos VALUES ( ?,?,?)");
+            String sql = ("INSERT INTO departamentos VALUES ( ?,?,?)");
+            PreparedStatement ps = conexion.prepareStatement(sql);
+
+            String linea;
+
+            while ((linea = br.readLine()) != null) {
+                String []  v  = linea.split(","); 
+                // String []  v  = linea.split("\\s+");
+                int d = Integer.parseInt(v[0].trim());
+                String n = v[1].trim();
+                String l = v[2].trim();
+                
+                ps.setInt(1, d);
+                ps.setString(2, n);
+                ps.setString(3, l);
+
+                int f = ps.executeUpdate();
+
+                System.out.println("Lineas afectadas: " + f);
+            }
+            
+
             conexion.close();
             br.close();
         } catch (SQLException e) {
