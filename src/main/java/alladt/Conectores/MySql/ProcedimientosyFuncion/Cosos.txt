@@ -1,0 +1,29 @@
+PROCEDIMEITNO
+
+delimiter $$
+create procedure pro1 create table ejemplo (
+    id INT NOT NULL PRIMARY KEY,
+    nombre VARCHAR(10)
+);
+COMMIT;
+END $$ delimiter;
+
+DELIMITER $$ 
+ CREATE PROCEDURE subida_sal(d INT, subida INT)
+ BEGIN UPDATE empleados SET salario = salario + subida WHERE dept_no = d;
+ COMMIT; 
+ END$$ DELIMITER ;
+
+
+FUNCION
+
+delimiter $$
+CREATE FUNCTION nombre_dep (d int)
+RETURNS VARCHAR(15)
+DETERMINISTIC
+BEGIN
+  DECLARE nom VARCHAR(15);
+  SET nom = 'NO EXISTE';
+  SELECT dnombre INTO nom FROM DEPARTAMENTOS WHERE dept_no = d;
+  return nom;
+END;
