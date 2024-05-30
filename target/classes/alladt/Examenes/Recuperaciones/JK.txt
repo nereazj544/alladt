@@ -1,0 +1,31 @@
+Realiza un programa java que inserte un fabricante. se han controlar de manera correcta las expception que se puedan producir, asi como aplicar las acciones pertinente con respecto a la tansacción. Sea cua sea la situacion se ha cerrar la sesion.
+
+Realiza un programa Java que reciba 3 argumentos desde main
+1) Una cadena de caracteres que corresponden con el comeinxo del nombre de un programa
+2) Un numero, que puede aparecer en cualquier parte del contenido del campo versión de un programa.
+3) Un operador AND u Or 
+Has de tener en cuentra qu los datos e la BD se almacenan una veces en mayus y otras en minus y tambien que los arg puden llevar en may o en minu
+
+Se deben de controlar los posibles erores que se puedan producir en la entrada de arg que se esperan, en todos los casos a contemplar se ha de mostrar un mensaje indeicando el error. Se han de controlar de manera correcta las excpeotion que se puedan producir. Sea cual sea la situacion se ha de cerrar la seson 
+
+Realiza un programa en java que recibe un argumento desde main, que el codigo de un fabricante, te cuenta que los codigos del fabricante estan almacenados todos en mayus. El programa debe mostrar todos los datos del fabricante y los programas que desarolla
+
+Mostrar minimante formateado: datos fabricantes(codigo, nombre, y pais) y a continaucion los programas (codigo, nombre y version)
+
+se deben de controlar lo posibles errores que se puedan producir en la entrada de argumanetos que se esperan, ento todos los casos a conbtemplar se ha de mostrar un mensaje indicado el error. se han de controlar de manera correcta las expcetion que se puedan procducir. sea cual sea la situacion se ha de cerrar la sesion.
+
+----------------------------------
+
+
+3(r2) - Clase Pregunta3.
+Realiza un programa java muestra los programas desarrollados por un determinado fabricante. Se recibe como parametro(arg) el codigo de frabricante
+realiza la comprobacion del fabricante y el listado de los programas que desarrolla mediante sentenciaspreparadas.
+realiza un metodo que compureba si el fabricante y el listado de los programas que desarrolla mediante sentencias preparadas.
+realiza un metodo que comprueba si el fabricante es valido y existe en la bd
+se han de controlar de manera correcta las exception que se puedan producir, asi como apliar las acciones pretinentes con respecto a la conexion.
+
+
+Realizae un programa java que inseta los datos de la tabla distribuye de la db has de leer los datos de un archivo de texto. se recibe como parametro (arg) la ruta de fichero distribuye.txt
+realiza la insercion mediante sentencia preparada. realiza un metodo par ala insercionn y otro metodo para listar lo datos.
+
+se han de controlar de manera correcta las excepicon que se puedan producir, asi como aplicar las acciones pertinentes con respecto a la conexion
