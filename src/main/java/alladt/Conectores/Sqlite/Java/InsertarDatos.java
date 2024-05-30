@@ -24,12 +24,8 @@ public class InsertarDatos {
             String dn = args[1];
             String l = args[2];
 
-            String sql = ("INSERT INTO departamentos VALUES ( " + d + ", '" + dn + "' , '" + l + "')"); // ! Si se hace
-                                                                                                        // de esta
-                                                                                                        // manera es
-                                                                                                        // importante
-                                                                                                        // añadir las ''
-                                                                                                        // a los textos.
+            String sql = ("INSERT INTO departamentos VALUES ( " + d + ", '" + dn + "' , '" + l + "')"); 
+            // ! Si se hace de esta manera es importante añadir las '' a los textos.
 
             Statement s = conexion.createStatement();
             int f = s.executeUpdate(sql);
