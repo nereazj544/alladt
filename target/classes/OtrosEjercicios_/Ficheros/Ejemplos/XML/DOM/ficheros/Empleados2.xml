@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Empleados>
+    <empleado id="1"><apellido>FERNANDEZ</apellido><dep>10</dep><salario>1000.45</salario></empleado>
+    <empleado id="2"><apellido>GIL</apellido><dep>20</dep><salario>2400.6</salario></empleado>
+    <empleado id="3"><apellido>LOPEZ</apellido><dep>10</dep><salario>3000.0</salario></empleado>
+    <empleado id="4"><apellido>RAMOS</apellido><dep>10</dep><salario>1500.56</salario></empleado>
+    <empleado id="5"><apellido>SEVILLA</apellido><dep>30</dep><salario>2200.0</salario></empleado>
+    <empleado id="6"><apellido>CASILLA</apellido><dep>30</dep><salario>1435.87</salario></empleado>
+    <empleado id="7"><apellido>REY</apellido><dep>20</dep><salario>2000.0</salario></empleado>
+</Empleados>

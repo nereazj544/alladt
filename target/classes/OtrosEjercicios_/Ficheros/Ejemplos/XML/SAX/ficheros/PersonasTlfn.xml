@@ -1,0 +1,38 @@
+<Personas>
+<persona telefono="623458789">
+<nombre>Ana</nombre>
+<edad>14</edad>
+</persona>
+<persona telefono="636987465">
+<nombre>Luis Miguel</nombre>
+<edad>15</edad>
+</persona>
+<persona telefono="654789123">
+<nombre>Alicia</nombre>
+<edad>13</edad>
+</persona>
+<persona telefono="547852963">
+<nombre>Pedro</nombre>
+<edad>15</edad>
+</persona>
+<persona telefono="623458789">
+<nombre>Manuel</nombre>
+<edad>16</edad>
+</persona>
+<persona>
+<nombre>Andress</nombre>
+<edad>12</edad>
+</persona>
+<persona telefono="123456789">
+<nombre>Julio</nombre>
+<edad>16</edad>
+</persona>
+<persona telefono="654147852">
+<nombre>Antonio</nombre>
+<edad>14</edad>
+</persona>
+<persona telefono="654123789">
+<nombre>Marta Jesus</nombre>
+<edad>13</edad>
+</persona>
+</Personas>
