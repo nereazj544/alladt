@@ -1,4 +1,4 @@
-package alladt.Ficheros;
+package alladt.Ficheros.borrar;
 
 import java.io.File;
 
