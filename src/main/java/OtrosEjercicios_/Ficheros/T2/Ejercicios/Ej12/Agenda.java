@@ -23,7 +23,7 @@ public class Agenda {
 	// FUNCIONES EDICION ARCHIVO
 	///////////////////////////////////////////////////////////////////////////////////////////////
 
-	void a�adirCont(String nom, String dni, int num) throws IOException { //a�adir Nombre DNI 123123123
+	void anadirCont(String nom, String dni, int num) throws IOException { //a�adir Nombre DNI 123123123
 		//a�ade un contacto a la agenda
 		out.write(nom + " " + dni + " " + num + "\n"); //escribe el contacto con la estructura //Nombre DNI 123123123
 		System.out.println("Contacto " + nom + " a�adido, por favor, reinicie el programa para guardar");
