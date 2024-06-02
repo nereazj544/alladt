@@ -19,7 +19,7 @@ public class Main {
 				salir = true;
 				break;
 			case ("a�adir"):
-				agenda.a�adirCont(scanner.next(), scanner.next(), scanner.nextInt());
+				agenda.anadirCont(scanner.next(), scanner.next(), scanner.nextInt());
 				break;
 			case ("buscar"):
 				agenda.buscarCont(scanner.next());
