@@ -29,5 +29,5 @@ Tipo test (posible) | parte del examen va a ser en papel (codigo incluido)
 > Si no eres Neo (el propietario de la cuenta :3) no sigas leyendo cotilla.
 > A menos que te interese la parte de: PSP
 ----
-PSP : Actividades de la unidad 2 con la inerfaz grafica y los de sockect, todos aquellos que no se hayan echo en clase.
+PSP : Actividades de la unidad 2 con la inerfaz grafica y los de sockect, todos aquellos que no se hayan echo en clase. Y hacer un repositorio igual que este pero con PSP
 ADT : Guia de MongoDB y seguir con el programa que deje a medias, falta insertar por sc, intentar esta vez desde un fichero txt, borrar, realizar consultas y alguna otra cosa que pueda llegar a hacer la doña.
