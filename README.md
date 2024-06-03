@@ -17,7 +17,7 @@
 # MongoDB
 ---
 # Examen
-Tipo test (posible) | parte del examen va a ser en papel
+Tipo test (posible) | parte del examen va a ser en papel (codigo incluido)
 
 
 19 Miercoles _ Conectores y hibernate | 14 Viernes _ fichero y mongo
