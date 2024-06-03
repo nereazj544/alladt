@@ -7,15 +7,31 @@
 5. [Examen](#examen)
 6. [TODO](#todo)
 ---
+> [!IMPORTANT]
+> Faltas ortagraficas seguramente a patadas, las corriges en tu mente, tiquismiquis :)
+---
 
 # Ficheros
+- XML, DOM.
+- Ficheros aleatorios una puta mierda de enteder hasta que les pillas el truco.
 
 ---
 # Conectores
+MySql, Sqlite, derby y alguno más
 ---
 # Hibernate
+MySql más la cosa esta de mierda por culera que da más por saco de lo que vale. Es importante destacar que si no le metes una version del año catapun es posible que no funcione, hay te dejo la recomendacion.
 ---
 # MongoDB
+.
+
+.
+
+.
+
+Sin comentarios.
+
+Bueno sí, lo unico bueno que tiene es la interfaz que por lo menos ves si se añaden correctamente las cosas, de otra manera, una mierda que casi me hace pegarme un tiro. Definitivamente necesito unas vacaiones urgentes.
 ---
 # Examen
 Tipo test (posible) | parte del examen va a ser en papel (codigo incluido)
