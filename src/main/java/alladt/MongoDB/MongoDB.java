@@ -158,8 +158,10 @@ public class MongoDB {
 		Scanner sc = new Scanner(System.in);
 		String t = "Insertar desde teclado";
 		System.out.println("Funcion: " + t);
+
 		MongoClient m = new MongoClient();
 		MongoDatabase db = m.getDatabase("MongoDB");
+		System.out.println("> El sistema ha establecido conexion con MongoDB");
 
 		System.out.println("\n> El sistema socilita que insertes un nombre para generar la nueva coleccion:");
 		String colecion = sc.nextLine();
@@ -169,18 +171,27 @@ public class MongoDB {
 
 		System.out.println("> El sistema requiere: Nombre");
 		String nombre = sc.nextLine();
+		
 		System.out.println("> El sistema requiere: Edad");
 		int edad = sc.nextInt();
-		String enter = sc.nextLine();
+		sc.nextLine(); //** CON ESTO SE LIMPIA EL BUFFER
+
 		System.out.println("> El sistema requiere: Ciudad");
 		String ciudad = sc.nextLine();
-		System.out.println("> El sistema requiere: un numero de hobbies (maximo 2)");
+
+		System.out.println("> El sistema requiere: un numero de hobbies");
 		int size = sc.nextInt();
-		String[] hobbies = new String[size];
+		sc.nextLine();
+
+		//! Para insertar arrays.
+		List<String> hobbies = new ArrayList<>();
 		System.out.println("> El sistema requiere: hobbies ");
-		for (int i = 0; i < hobbies.length; i++) {
-			hobbies[i] = sc.nextLine();
+		for (int i = 0; i < size; i++) {
+			System.out.println("> El sistema requiere que insertes el " + (i + 1) + " hobby.");
+			String h = sc.nextLine();
+			hobbies.add(h);
 		}
+
 		sc.close();
 		
 
@@ -189,18 +200,14 @@ public class MongoDB {
 		doc.put("nombre", nombre);
 		doc.put("edad", edad);
 		doc.put("ciudad", ciudad);
-		for (String h : hobbies) {
-			doc.put("hobbies", h);
+		doc.put("hobbies", hobbies);
 
-		}
 		System.out.println("> El sistema a insertado correctamente los siguientes datos: ");
 		System.out.println("- Nombre: " + nombre);
 		System.out.println("- Edad: " + edad);
 		System.out.println("- Ciudad: " + ciudad);
-		for (String s : hobbies) {
-			System.out.println("- Hobbies: " + s);
+		System.out.println("- Hobbies: " + hobbies);
 
-		}
 		c.insertOne(doc);
 
 	}
