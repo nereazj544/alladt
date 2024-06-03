@@ -14,17 +14,27 @@ import java.util.Scanner;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.model.Filters;
+import com.mongodb.client.result.DeleteResult;
 
 //! Clases json 
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.bson.*;
+import org.bson.types.ObjectId;
 
 public class MongoDB {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Inserte un numero: ");
+		System.out.println("> El sistema requiere que inserte un numero");
+		System.out.println(" 1- Conexion ");
+		System.out.println(" 2- Crear Base de datos y coleccion ");
+		System.out.println(" 3- Insertar datos (JSON) ");
+		System.out.println(" 4- Generear JSON");
+		System.out.println(" 5- Insetartar datos desde teclado");
+		System.out.println(" 6- WuWa");
+		System.out.println(" 7- Borrar");
 		int r = sc.nextInt();
 
 		switch (r) {
@@ -226,50 +236,34 @@ public class MongoDB {
 		MongoClient m = new MongoClient();
 		MongoDatabase db = m.getDatabase("MongoDB");
 		System.out.println("> El sistema ha establecido conexion con MongoDB");
-
-		System.out.println("\n> El sistema socilita que insertes un nombre para generar la nueva coleccion:");
-		String colecion = sc.nextLine();
-		db.createCollection(colecion);
-
 		System.out.println("> El sistema socilita los siguientes datos: ");
-
 		System.out.println("> El sistema requiere: Nombre");
 		String nombre = sc.nextLine();
 
-		System.out.println("> El sistema requiere: Edad");
-		int edad = sc.nextInt();
-		sc.nextLine(); // ** CON ESTO SE LIMPIA EL BUFFER
+		System.out.println("> El sistema requiere: Arma");
+		String arma = sc.nextLine();
 
-		System.out.println("> El sistema requiere: Ciudad");
-		String ciudad = sc.nextLine();
+		System.out.println("> El sistema requiere: elemento (aero, electro, destrucion, espectro, glacio, fusion)");
+		String elemento = sc.nextLine();
 
-		System.out.println("> El sistema requiere: un numero de hobbies");
-		int size = sc.nextInt();
-		sc.nextLine();
+		System.out.println("> El sistema requiere: rareza (4 o 5)");
+		int rareza = sc.nextInt();
 
-		// ! Para insertar arrays.
-		List<String> hobbies = new ArrayList<>();
-		System.out.println("> El sistema requiere: hobbies ");
-		for (int i = 0; i < size; i++) {
-			System.out.println("> El sistema requiere que insertes el " + (i + 1) + " hobby.");
-			String h = sc.nextLine();
-			hobbies.add(h);
-		}
 
 		sc.close();
 
-		MongoCollection<Document> c = db.getCollection(colecion);
+		MongoCollection<Document> c = db.getCollection("WuWa");
 		Document doc = new Document();
 		doc.put("nombre", nombre);
-		doc.put("edad", edad);
-		doc.put("ciudad", ciudad);
-		doc.put("hobbies", hobbies);
+		doc.put("arma", arma);
+		doc.put("elemento", elemento);
+		doc.put("rareza", rareza);
 
 		System.out.println("> El sistema a insertado correctamente los siguientes datos: ");
 		System.out.println("- Nombre: " + nombre);
-		System.out.println("- Edad: " + edad);
-		System.out.println("- Ciudad: " + ciudad);
-		System.out.println("- Hobbies: " + hobbies);
+		System.out.println("- arma: " + arma);
+		System.out.println("- Elemento: " + elemento);
+		System.out.println("- Rareza: " + rareza);
 
 		c.insertOne(doc);
 	}
@@ -288,6 +282,27 @@ public class MongoDB {
 		MongoDatabase db = m.getDatabase("MongoDB");
 		MongoCollection<Document> collection = db.getCollection("WuWa");
 
+		System.out.println("> El sistema requiere id del personaje a borrar");
+		String id = sc.nextLine();
+
+		if (!okId.okId(id)) {
+			System.out.println("> El sistema ha detectado un id no valido.");
+			System.exit(0);
+		}
+		DeleteResult dr = collection.deleteOne(Filters.eq("_id", new ObjectId(id)));
+		
+		if (dr.getDeletedCount() == 1) {
+			System.out.println("> El sistema ha borrado el personaje con el id: " + id);
+		}else{
+			System.out.println("> El sistema no ha encontrado ningun id al introducido.");
+			System.exit(0);
+
+		}
+
 	}
+
+
+
+	
 
 }

@@ -1,0 +1,5 @@
+nombre: Calcharo
+posicion: dps
+elemento: electro
+arma: mandoble
+rareza: 5
