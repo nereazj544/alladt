@@ -1,0 +1,110 @@
+[
+        {
+            "nombre": "Calcharo",
+            "arma": "Mandoble",
+            "elemento": "Electro",
+            "rareza": 5
+        },
+        {
+            "nombre": "Yinlin",
+            "arma": "Rectifier",
+            "elemento": "Electro",
+            "rareza": 5
+        },
+        {
+            "nombre": "Yuanwu",
+            "arma": "Guanteletes",
+            "elemento": "Electro",
+            "rareza": 4
+        },
+        {
+            "nombre": "Jiyan",
+            "arma": "Mandoble",
+            "elemento": "Aero",
+            "rareza": 5
+        },
+        {
+            "nombre": "Aalto",
+            "arma": "Pistolas",
+            "elemento": "Aero",
+            "rareza": 4
+        },
+        {
+            "nombre": "Yangyang",
+            "arma": "Espada",
+            "elemento": "Aero",
+            "rareza": 4
+        },
+        {
+            "nombre": "Jianxin",
+            "arma": "Guanteletes",
+            "elemento": "Aero",
+            "rareza": 5
+        },
+        {
+            "nombre": "Mortefi",
+            "arma": "Pistolas",
+            "elemento": "Fusion",
+            "rareza": 4
+        },
+        {
+            "nombre": "Chixia",
+            "arma": "Pistolas",
+            "elemento": "Fusion",
+            "rareza": 4
+        },
+        {
+            "nombre": "Encore",
+            "arma": "Rectifier",
+            "elemento": "Fusion",
+            "rareza": 5
+        },
+        {
+            "nombre": "Lingyang",
+            "arma": "Guanteletes",
+            "elemento": "Glacio",
+            "rareza": 5
+        },
+        {
+            "nombre": "Sanhua",
+            "arma": "Espada",
+            "elemento": "Glacio",
+            "rareza": 4
+        },
+        {
+            "nombre": "Baizhi",
+            "arma": "Rectifier",
+            "elemento": "Glacio",
+            "rareza": 4
+        },
+        {
+            "nombre": "Neo",
+            "arma": "Espada",
+            "elemento": "Destrucion",
+            "rareza": 5
+        },
+        {
+            "nombre": "Taoqi",
+            "arma": "Mandoble",
+            "elemento": "Destrucion",
+            "rareza": 4
+        },
+        {
+            "nombre": "Danjin",
+            "arma": "Espada",
+            "elemento": "Destrucion",
+            "rareza": 4
+        },
+        {
+            "nombre": "Neo",
+            "arma": "Espada",
+            "elemento": "Espectro",
+            "rareza": 5
+        },
+        {
+            "nombre": "Verina",
+            "arma": "Rectifier",
+            "elemento": "Espectro",
+            "rareza": 5
+        }
+    ]

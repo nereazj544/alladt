@@ -43,7 +43,11 @@ public class MongoDB {
 			case 5:
 				InsertarSC();
 				break;
+
 			case 6:
+				InsertarWuWa();
+				break;
+			case 7:
 				Borrar();
 				break;
 
@@ -52,6 +56,8 @@ public class MongoDB {
 		}
 
 	}
+
+	
 
 	// ! Conexion
 	private static void Conexion() {
@@ -71,7 +77,7 @@ public class MongoDB {
 		MongoClient m = new MongoClient();
 		System.out.println("> El sistema ha extablecido conexion con MongoDB");
 		MongoDatabase db = m.getDatabase("MongoDB");
-		db.createCollection("Coleccion");
+		db.createCollection("WuWa");
 		System.out.println("> MongoDB ha creado todo lo que no se encontraba existente.");
 	}
 
@@ -82,13 +88,13 @@ public class MongoDB {
 
 		try {
 			String ruta = "C:\\Users\\nzjha\\Desktop\\GITHUB\\alladt-1\\src\\main\\java\\alladt\\MongoDB\\database";
-			FileReader fr = new FileReader(ruta + "\\archivo.json");
+			FileReader fr = new FileReader(ruta + "\\wuthering_waves.json");
 			BufferedReader bf = new BufferedReader(fr);
 
 			MongoClient m = new MongoClient();
 			System.out.println("> El sistema ha extablecido conexion con MongoDB");
 			MongoDatabase db = m.getDatabase("MongoDB");
-			MongoCollection<Document> c = db.getCollection("Coleccion");
+			MongoCollection<Document> c = db.getCollection("WuWa");
 
 			StringBuilder stb = new StringBuilder();
 			String l;
@@ -171,10 +177,10 @@ public class MongoDB {
 
 		System.out.println("> El sistema requiere: Nombre");
 		String nombre = sc.nextLine();
-		
+
 		System.out.println("> El sistema requiere: Edad");
 		int edad = sc.nextInt();
-		sc.nextLine(); //** CON ESTO SE LIMPIA EL BUFFER
+		sc.nextLine(); // ** CON ESTO SE LIMPIA EL BUFFER
 
 		System.out.println("> El sistema requiere: Ciudad");
 		String ciudad = sc.nextLine();
@@ -183,7 +189,7 @@ public class MongoDB {
 		int size = sc.nextInt();
 		sc.nextLine();
 
-		//! Para insertar arrays.
+		// ! Para insertar arrays.
 		List<String> hobbies = new ArrayList<>();
 		System.out.println("> El sistema requiere: hobbies ");
 		for (int i = 0; i < size; i++) {
@@ -193,7 +199,6 @@ public class MongoDB {
 		}
 
 		sc.close();
-		
 
 		MongoCollection<Document> c = db.getCollection(colecion);
 		Document doc = new Document();
@@ -212,8 +217,76 @@ public class MongoDB {
 
 	}
 
+
+	private static void InsertarWuWa() {
+		Scanner sc = new Scanner(System.in);
+		String t = "Insertar desde teclado";
+		System.out.println("Funcion: " + t);
+
+		MongoClient m = new MongoClient();
+		MongoDatabase db = m.getDatabase("MongoDB");
+		System.out.println("> El sistema ha establecido conexion con MongoDB");
+
+		System.out.println("\n> El sistema socilita que insertes un nombre para generar la nueva coleccion:");
+		String colecion = sc.nextLine();
+		db.createCollection(colecion);
+
+		System.out.println("> El sistema socilita los siguientes datos: ");
+
+		System.out.println("> El sistema requiere: Nombre");
+		String nombre = sc.nextLine();
+
+		System.out.println("> El sistema requiere: Edad");
+		int edad = sc.nextInt();
+		sc.nextLine(); // ** CON ESTO SE LIMPIA EL BUFFER
+
+		System.out.println("> El sistema requiere: Ciudad");
+		String ciudad = sc.nextLine();
+
+		System.out.println("> El sistema requiere: un numero de hobbies");
+		int size = sc.nextInt();
+		sc.nextLine();
+
+		// ! Para insertar arrays.
+		List<String> hobbies = new ArrayList<>();
+		System.out.println("> El sistema requiere: hobbies ");
+		for (int i = 0; i < size; i++) {
+			System.out.println("> El sistema requiere que insertes el " + (i + 1) + " hobby.");
+			String h = sc.nextLine();
+			hobbies.add(h);
+		}
+
+		sc.close();
+
+		MongoCollection<Document> c = db.getCollection(colecion);
+		Document doc = new Document();
+		doc.put("nombre", nombre);
+		doc.put("edad", edad);
+		doc.put("ciudad", ciudad);
+		doc.put("hobbies", hobbies);
+
+		System.out.println("> El sistema a insertado correctamente los siguientes datos: ");
+		System.out.println("- Nombre: " + nombre);
+		System.out.println("- Edad: " + edad);
+		System.out.println("- Ciudad: " + ciudad);
+		System.out.println("- Hobbies: " + hobbies);
+
+		c.insertOne(doc);
+	}
+
+
+
+
 	private static void Borrar() {
-		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		String t = "Insertar desde teclado";
+		System.out.println("Funcion: " + t);
+
+		MongoClient m = new MongoClient();
+		System.out.println("> El sistema ha establecido conexion con MongoDB");
+
+		MongoDatabase db = m.getDatabase("MongoDB");
+		MongoCollection<Document> collection = db.getCollection("WuWa");
 
 	}
 
