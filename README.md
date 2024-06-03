@@ -36,8 +36,8 @@ Sin comentarios.
 
 
 # Examen
+- Día 19 Miercoles _ Conectores y hibernate | Día 14 Viernes _ fichero y mongo 🔫
 - Tipo test (posible) | parte del examen va a ser en papel (codigo incluido)
-- 19 Miercoles _ Conectores y hibernate | 14 Viernes _ fichero y mongo
 
 ---
 # TODO
