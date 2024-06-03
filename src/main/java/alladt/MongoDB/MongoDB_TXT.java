@@ -31,6 +31,10 @@ public class MongoDB_TXT {
             String arma = "";
             int rareza = 0;
 
+
+            while ((linea = bf.readLine()) != null) {
+                
+            }
         } catch (Exception e) {
             System.out.println("> El sistema no ha podido seguir las indicaciones dadas.");
             System.out.println("> El sitema proporciona el error: " + e.getMessage());
