@@ -13,7 +13,7 @@
 
 # Ficheros
 - XML, DOM.
-- Ficheros aleatorios una puta mierda de enteder hasta que les pillas el truco.
+- Ficheros aleatorios (una puta mierda de enteder hasta que les pillas el truco, hay una explicacion por hay en el repositorio).
 
 ---
 # Conectores
