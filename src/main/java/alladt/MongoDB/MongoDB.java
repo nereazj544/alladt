@@ -41,13 +41,18 @@ public class MongoDB {
 		case 4:
 			GenerarJSON();
 			break;
+		case 5:
+			InsertarSC();
+			break;
+		case 6:
+			Borrar();
+			break;
 
 		default:
 			break;
 		}
 
 	}
-	
 	
 
 	//! Conexion
@@ -114,6 +119,7 @@ String ruta = "D:\\Aeclipse-workspace\\MongoDB\\src\\main\\java\\database\\";
 		
 	}
 	
+	//! Generar JSON
 	private static void GenerarJSON() {
 		String t = "Generear JSON";
 		System.out.println("Funcion: " + t);
@@ -149,5 +155,32 @@ String ruta = "D:\\Aeclipse-workspace\\MongoDB\\src\\main\\java\\database\\";
 		}
 		
 	}
+
+	//! Insertar con SC
+	private static void InsertarSC() {
+		String t = "Insertar desde teclado";
+		System.out.println("Funcion: " + t);
+		MongoClient m = new MongoClient();
+		MongoDatabase db = m.getDatabase("MongoDB");
+		MongoCollection<Document> c = db.getCollection("Coleccion");
+		
+		System.out.println("> El sistema socilita los siguientes datos: ");
+		Scanner sc = new Scanner (System.in);
+	
+		System.out.println("> El sistema requiere: Nombre");
+		String nombre = sc.nextLine();
+	}
+
+
+	
+
+	private static void Borrar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
 
 }
