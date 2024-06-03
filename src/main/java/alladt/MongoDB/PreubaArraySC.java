@@ -1,3 +1,5 @@
+package alladt.MongoDB;
+
 import java.util.Scanner;
 
 public class PreubaArraySC {
