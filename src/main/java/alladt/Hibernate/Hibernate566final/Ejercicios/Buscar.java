@@ -1,13 +1,11 @@
 package alladt.Hibernate.Hibernate566final.Ejercicios;
 
 import java.util.List;
-import java.util.Set;
+
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 
-import com.mysql.cj.Query;
 
 import alladt.Hibernate.Hibernate566final.Conf.*;
 

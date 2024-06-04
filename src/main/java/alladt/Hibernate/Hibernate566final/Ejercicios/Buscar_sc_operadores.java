@@ -64,7 +64,7 @@ public class Buscar_sc_operadores {
 			System.out.println("> Nombre del juego: " + personajes.getJuego());
 			System.out.println("> Personajes asociados al juego del personaje: " + personajes.getNombre());
 		}
-
+		sc.close();
         
 	}
 }
