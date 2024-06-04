@@ -1,4 +1,4 @@
-package alladt.MongoDB;
+package alladt.MongoDB.Other;
 
 import java.io.BufferedReader;
 import java.io.File;

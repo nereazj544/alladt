@@ -1,4 +1,4 @@
-package alladt.MongoDB;
+package alladt.MongoDB.Other;
 
 import org.bson.types.ObjectId;
 

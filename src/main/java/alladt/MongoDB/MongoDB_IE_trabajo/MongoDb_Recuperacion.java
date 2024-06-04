@@ -1,4 +1,4 @@
-package alladt.MongoDB;
+package alladt.MongoDB.MongoDB_IE_trabajo;
 
 
 import java.io.BufferedReader;
