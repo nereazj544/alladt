@@ -7,9 +7,10 @@
 # ¿Que es MongoDB?
 MongoDB es un sistema de base de datos NoSQL, orientado a documentos y de código abierto.
 
-MongoDB trabaja con archivos ```.json´´
+MongoDB trabaja con archivos _.json_
 
-# 
+# IDEs
+Con MongoDB se puede trabajar desde:
 
 
 # 
