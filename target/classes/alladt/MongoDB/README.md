@@ -60,6 +60,9 @@ Si se quiere hace cosas con JSON es posible que se necesite otras _chismas_ de e
 
 # Diferencias
 
+> [!IMPORTANT]
+>https://platzi.com/blog/mongodb-aggregation-framework-ejemplos-y-ejercicios/
+
 ## FindIterable
 
 Se utiliza para realizar consultas basicas en una coleccion, en otras palabras, para encontrar documentos que coincidan con un criterio de busqueda especifico.
