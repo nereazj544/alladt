@@ -63,7 +63,6 @@ public class RefConsultas {
             case 2:
                 EmpresaCreoPersonaje();
                 break;
-            
 
             default:
                 System.out.println("> El sistema no ha detectado una respuesta valida.");
@@ -234,7 +233,7 @@ public class RefConsultas {
 
     }
 
-    private static void BuscarJuego(){
+    private static void BuscarJuego() {
         Scanner sc = new Scanner(System.in);
         String string = "Personajes";
         String col = "Videojuegos";
@@ -280,8 +279,8 @@ public class RefConsultas {
         }
 
     }
-    
-    private static void CuantosPersonajesPorJuegos(){
+
+    private static void CuantosPersonajesPorJuegos() {
         Scanner sc = new Scanner(System.in);
         String string = "Personajes";
         String col = "Videojuegos";
@@ -304,14 +303,15 @@ public class RefConsultas {
 
             // ! Filtro de busqueda.
             Document filtro = new Document("juego", nombre);
-            AggregateIterable <Document> conteo = collection.aggregate(Arrays.asList(Aggregates.group(filtro, Accumulators.sum("count", 1))));
+            AggregateIterable<Document> conteo = collection
+                    .aggregate(Arrays.asList(Aggregates.group(filtro, Accumulators.sum("count", 1))));
 
             if (conteo.iterator().hasNext()) {
                 for (Document document : conteo) {
                     System.out.println("> El sistema a contado: " + document.toString());
                 }
-                
-            }else{
+
+            } else {
                 System.out.println("> El sistema no ha encontrado nada");
             }
             sc.close();
@@ -322,23 +322,7 @@ public class RefConsultas {
             e.printStackTrace();
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     // ! EMPRESA
 
     private static void ListarEmpresP() {
@@ -425,31 +409,31 @@ public class RefConsultas {
 
             // ! Mensaje + busqueda
             String p = "Nombre";
-            System.out.println("> El sistema requiere que se introduca un: '" + p + "' del personaje para buscar la empresa que lo creo.");
+            System.out.println("> El sistema requiere que se introduca un: '" + p
+                    + "' del personaje para buscar la empresa que lo creo.");
             String nombre = sc.nextLine();
 
             // ! Filtro de busqueda.
             Document filtro = new Document("nombre", nombre);
-            FindIterable <Document> busqueda = collection.find(filtro);
-            
+            FindIterable<Document> busqueda = collection.find(filtro);
 
             if (busqueda.iterator().hasNext()) {
                 System.out.println("> El sistema ha encontrado resultados con '" + nombre + "'.");
                 for (Document document : busqueda) {
                     int empresa_id = document.getInteger("empresa_id");
                     Document filter = new Document("id", empresa_id);
-                    FindIterable <Document> find = collectionEmp.find(filter);
+                    FindIterable<Document> find = collectionEmp.find(filter);
                     if (find.iterator().hasNext()) {
                         System.out.println("> El sistema ha encotrado la empresa que creo a " + nombre);
                         for (Document document2 : find) {
                             System.out.println(document2.toJson());
                         }
-                    }else{
+                    } else {
                         System.out.println("> El sistema no encontro nada");
                     }
                 }
 
-                }else {
+            } else {
                 System.out.println("> El sistema no ha detectado nada con el nombre: " + nombre);
                 // System.out.printf("El sistema no ha detectado nada con el nombre: '%s'",
                 // nombre);
@@ -462,37 +446,7 @@ public class RefConsultas {
             e.printStackTrace();
         }
 
-
     }
 
-     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     // ! END CLASS RefConsultas
 }
