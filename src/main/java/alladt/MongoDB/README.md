@@ -60,7 +60,7 @@ Si se quiere hace cosas con JSON es posible que se necesite otras _chismas_ de e
 
 # Diferencias
 
->[!IMPORTANTE]
+> [!IMPORTANT]
 >https://platzi.com/blog/mongodb-aggregation-framework-ejemplos-y-ejercicios/
 
 ## FindIterable
