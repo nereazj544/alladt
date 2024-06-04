@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "nombre": "Bennett",
+        "juego": "Genshin Impact",
+        "empresa_id": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Kazuha",
+        "juego": "Genshin Impact",
+        "empresa_id": 1
+    },
+    {
+        "id": 3,
+        "nombre": "Arlecchino",
+        "juego": "Genshin Impact",
+        "empresa_id": 1
+    },
+    {
+        "id": 4,
+        "nombre": "Xiao",
+        "juego": "Genshin Impact",
+        "empresa_id": 1
+    },
+    {
+        "id": 5,
+        "nombre": "Jing Yan",
+        "juego": "Honkai Star Rail",
+        "empresa_id": 1
+    },
+    {
+        "id": 6,
+        "nombre": "Kafka",
+        "juego": "Honkai Star Rail",
+        "empresa_id": 1
+    },
+    {
+        "id": 7,
+        "nombre": "Gepard",
+        "juego": "Honkai Star Rail",
+        "empresa_id": 1
+    },
+    {
+        "id": 8,
+        "nombre": "Topaz y Conti",
+        "juego": "Honkai Star Rail",
+        "empresa_id": 1
+    },
+    {
+        "id": 9,
+        "nombre": "Jiyan",
+        "juego": "Wuthering Waves",
+        "empresa_id": 2
+    },
+    {
+        "id": 10,
+        "nombre": "Calcharo",
+        "juego": "Wuthering Waves",
+        "empresa_id": 2
+    },
+    {
+        "id": 11,
+        "nombre": "Lingyang",
+        "juego": "Wuthering Waves",
+        "empresa_id": 2
+    },
+    {
+        "id": 12,
+        "nombre": "Encore",
+        "juego": "Wuthering Waves",
+        "empresa_id": 2
+    },
+    {
+        "id": 13,
+        "nombre": "Arion",
+        "juego": "Inazuma Eleven",
+        "empresa_id": 3
+    },
+    {
+        "id": 14,
+        "nombre": "Mark",
+        "juego": "Inazuma Eleven",
+        "empresa_id": 3
+    },
+    {
+        "id": 15,
+        "nombre": "Umei",
+        "juego": "Inazuma Eleven",
+        "empresa_id": 3
+    },
+    {
+        "id": 16,
+        "nombre": "Sonny",
+        "juego": "Inazuma Eleven",
+        "empresa_id": 3
+    }
+]
