@@ -22,8 +22,9 @@
             <artifactId>mongo-java-driver</artifactId>
             <version>3.12.14</version>
         </dependency>
-        <!--
-		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+
+        <!-- ** JSON -->
+        <!--https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
@@ -37,7 +38,7 @@
         </dependency>
 
         <!-- ** CONECTORES Y HIBERNATE -->
-        <!-- Hibernate -->
+        <!-- ! Hibernate -->
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -46,8 +47,8 @@
         </dependency>
 
 
-        <!-- MySql -->
         <!-- TODO TAMBIEN USADO PARA HIBERNATE -->
+        <!--! MySql -->
         <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
         <dependency>
             <groupId>com.mysql</groupId>
@@ -55,7 +56,7 @@
             <version>8.4.0</version>
         </dependency>
 
-        <!-- Sqlite -->
+        <!--! Sqlite -->
         <!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
         <dependency>
             <groupId>org.xerial</groupId>
