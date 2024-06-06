@@ -47,4 +47,4 @@ Sin comentarios.
 > Si no eres Neo (el propietario de la cuenta :3) no sigas leyendo cotilla.
 > A menos que te interese la parte de: PSP
 ----
-> PSP : Actividades de la unidad 2 con la inerfaz grafica y los de sockect, todos aquellos que no se hayan echo en clase. Y hacer un repositorio igual que este pero con PSP.
+> PSP : Actividades de la unidad 2 con la inerfaz grafica y los de sockect, todos aquellos que no se hayan echo en clase. 
