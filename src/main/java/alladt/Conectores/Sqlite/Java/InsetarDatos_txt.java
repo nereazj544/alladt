@@ -45,7 +45,6 @@ public class InsetarDatos_txt {
                 ps.setString(3, l);
 
                 int f = ps.executeUpdate();
-
                 System.out.println("Lineas afectadas: " + f);
             }
             
