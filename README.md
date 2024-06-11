@@ -34,17 +34,15 @@ Sin comentarios.
 
 - Bueno sí, lo unico bueno que tiene es la interfaz que por lo menos ves si se añaden correctamente las cosas, de otra manera, una mierda que casi me hace pegarme un tiro. Definitivamente necesito unas vacaiones urgentes.
 
-
+---
 # Examen
 - Día 19 Miercoles _ Conectores y hibernate | Día 14 Viernes _ fichero y mongo 🔫
 - Tipo test (posible) | parte del examen va a ser en papel (codigo incluido)
+
 > [!IMPORTANT]
 > Uno de los dos examenes sera a papel (tipo test, pedazo de codigo para corregir), el otro sera en el ordenador.
-
 ---
 # TODO
 > [!IMPORTANT]
 > Si no eres Neo (el propietario de la cuenta :3) no sigas leyendo cotilla.
-> A menos que te interese la parte de: PSP
-----
-> PSP : Actividades de la unidad 2 con la inerfaz grafica y los de sockect, todos aquellos que no se hayan echo en clase. 
+
